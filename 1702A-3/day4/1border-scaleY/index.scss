@@ -1,0 +1,36 @@
+
+@mixin setTopBorder($color: #ccc) {
+     & {
+         position: relative;
+     }
+     &::after {
+         content: "";
+         position: absolute;
+         left:0;
+         right:0;
+         height: 1px;
+         background: red;
+         transform: scaleY(0.5);
+     }
+}
+
+@mixin setBottomBorder($color: #ccc) {
+    & {
+        position: relative;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        height: 1px;
+        background: red;
+        transform: scaleY(0.5);
+    }
+
+}
+
+.nav {
+    @include setTopBorder;
+}

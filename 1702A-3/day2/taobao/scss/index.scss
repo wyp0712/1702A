@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+$defaultFontSize: 37.5px !default;
+
+@function cssToRem($font) {
+  @return $font / $defaultFontSize * 1rem;
+}
+
+%juzhong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin setBorderTop {
+  .border {
+    border-top: 1px solid #999
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border {
+      border-top: 0.5px solid #999
+    }
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    .border {
+      border-top: 0.333333px solid #999
+    }
+  }
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: cssToRem(37px);
+  background: #FF852A;
+  display: flex;
+
+  .header-left {
+    flex: 2;
+    @extend %juzhong;
+    color: #fff;
+
+    .iconfont {
+      font-size: 26px;
+    }
+
+  }
+
+  .header-right {
+    flex: 8;
+    @extend %juzhong;
+
+    .header-right-input {
+      width: 98%;
+      height: cssToRem(25px);
+      // border:1px solid black;
+      @extend %juzhong;
+      border-radius: 4px;
+      background: #FF4E22;
+      // @extend .border;
+      position: relative;
+
+      input {
+        width: 98%;
+        height: 100%;
+        background: #FF4E22;
+        border: 0;
+      }
+
+      .icon-input {
+        position: absolute;
+        left: 31%;
+        top: 15%;
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+  }
+
+}
+
+.main {
+  flex: 1;
+  overflow: auto;
+}
+
+/* 轮播图 */
+.swiper-container {
+  width: 100%;
+  height: cssToRem(165px);
+
+  .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// @mixin setBottomLine($c: #C7C7C7) {
+//   & {
+//       position: relative;
+//   }
+//   &:before {
+//       content: " ";
+//       position: absolute;
+//       left: 0;
+//       bottom: 0;
+//       width: 100%;
+//       height: 1px;
+//       border-bottom: 1px solid $c;
+//   }
+//   [data-dpr="1"] &:before {
+//       transform-origin: 0 0;
+//       transform: scaleY(0.5);
+//   }
+// }
+
+@mixin top {
+  & {
+    border-top: 1px solid #999
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    & {
+      border-top: 0.5px solid #999
+    }
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    & {
+      border-top: 0.333333px solid #999
+    }
+  }
+}
+
+
+/* icon-box */
+.main-icon-box {
+  height: cssToRem(160px);
+  display: flex;
+  flex-wrap: wrap;
+  @extend %juzhong;
+
+  @include top;
+
+
+  // @include setBottomLine;
+
+  .icon-item {
+    width: 20%;
+    height: cssToRem(67px);
+    display: flex;
+    flex-direction: column;
+
+    span:nth-child(1) {
+      flex: 8;
+      @extend %juzhong;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    span:nth-child(2) {
+      flex: 2;
+      @extend %juzhong;
+      font-size: 12px;
+    }
+  }
+
+}
+
+.footer {
+  background: red;
+  height: cssToRem(45px);
+  display: flex;
+  @extend %juzhong;
+
+  .footer-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    span:nth-child(1) {
+      font-size: 20px;
+    }
+
+    span {
+      flex: 1;
+      @extend %juzhong;
+      font-size: 12px;
+    }
+  }
+}

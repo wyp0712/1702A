@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 0;
+            height: 35px;
+            ;
+            border-radius: 4px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box"></div>
+    <button id="btn">按钮</button>
+
+
+    <script>
+        // var num = parseFloat('abc124'),b;
+        // if(num) b = true; b = false
+        const box = document.querySelector('.box');
+        let j = 0;
+        let gloId;
+
+        //  setInterval(() => {
+        //      j ++;
+        //      if (j > 200) return;
+        //      box.style.width = j + 'px'
+        //  })
+
+        function animate() {
+            j++;
+            //  if (j > 500) return;
+            box.style.width = j + 'px';
+            gloId = requestAnimationFrame(animate)
+            console.log(gloId, 'gloId')
+            if (j > 100) {
+                cancelAnimationFrame(gloId)
+            }
+        }
+
+        gloId = requestAnimationFrame(animate)
+
+    </script>
+</body>
+
+</html>

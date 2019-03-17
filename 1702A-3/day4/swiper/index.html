@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../../libs/swiper.css">
+    <style>
+        .swiper-container {
+            width: 500px;
+            height: 300px;
+        }
+
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .box {
+            width: 500px;
+            height: 40px;
+            border: 1px solid black;
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .box div {
+            flex: 1;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .active {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div> -->
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../../img/2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../../img/3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../../img/4.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="../../jquery/jquery.min.js"></script>
+    <script src="../../libs/swiper.js"></script>
+
+    <script>
+        var mySwiper = new Swiper(".swiper-container", {
+            // speed: 1000,
+            // autoplay: {
+            //     delay: 0
+            // },
+            // loop: true,
+            // effect: 'cube', // cube coverflow  flip fade
+            // direction: 'vertical',
+            on: {
+                setTranslate: function (translate) {
+                    //自定义事件
+                    console.log(translate, 'ss')
+                },
+                slideChange: function () {
+                    console.log(this.activeIndex);
+                    // index
+                    $('.item').eq(this.activeIndex).addClass('active').siblings().removeClass('active');
+                },
+            },
+        })
+
+
+        $('.item').click(function () {
+            let index = $(this).index();
+
+            $(this).addClass('active').siblings().removeClass('active');
+
+            mySwiper.setTransition(1000); //设定过渡的时间
+            mySwiper.setTranslate(-500 * index)
+
+        })
+
+
+        /*
+                $('#btn1').click(function(){
+            mySwiper.setTransition(1000);//设定过渡的时间
+            mySwiper.setTranslate(-300);//设定位移，可以为正数
+        })
+        */
+    </script>
+
+
+    <div  class="loading">
+        <div  class="wrapper">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

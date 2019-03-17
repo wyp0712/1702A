@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+      
+
+      @media screen and (max-width: 768px){
+          /* body {
+              background: blue;
+          } */
+          .container{
+              height: 50px;;
+              display: flex;
+              flex-direction: column; 
+          }
+          .container li{
+               flex:1;
+               height: 100%;
+               text-align: center;
+               line-height: 50px;
+               background: red;
+               float: left;
+          }
+      }
+      @media screen and (min-width: 992px){
+          /* body {
+              background: orchid;
+          } */
+          .container{
+              height: 50px;;
+              display: flex;
+              
+          }
+          .container li{
+               flex:1;
+               height: 100%;
+               text-align: center;
+               line-height: 50px;
+               background: red;
+               /* float: left; */
+          }
+         
+      }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+          /* body {
+              background: red;
+          } */
+          .container{
+              height: 50px;;
+              display: flex;
+              flex-wrap: wrap;
+
+          }
+          .container li{
+               width: 50%;
+               height: 100%;
+               text-align: center;
+               line-height: 50px;
+               background: red;
+               float: left;
+          }
+        
+      }
+
+    
+    </style>
+</head>
+<body>
+
+
+    <ul class="container">
+       <li>tab1</li>
+       <li>tab2</li>
+       <li>tab3</li>
+       <li>tab4</li>
+    </ul>
+    
+    <!-- 768 992 -->
+</body>
+</html>

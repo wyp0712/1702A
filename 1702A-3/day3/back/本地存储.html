@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        
+        user: <input type="text" class="user"><br>
+        pwd: <input type="text" class="pwd"><br>
+
+        <button id="btn">提交</button>
+         
+         <button id="remove">删除</button>
+
+    </div>
+
+    <script>    
+    // const 声明常量  let声明变量 都不能重复声明； 不能变量提升
+    const user = document.querySelector('.user');
+    const pwd = document.querySelector('.pwd');
+    const stroge = window.localStorage;
+
+    console.log(stroge, 'stroge')
+
+    if (stroge.length) {
+        user.value = stroge.getItem('user')
+        pwd.value = stroge.getItem('pwd')
+    }
+      btn.onclick = function() {
+        let userV = user.value;
+        let pwdV = pwd.value;
+        stroge.setItem('user', userV)
+        stroge.setItem('pwd', pwdV)
+      }
+
+      remove.onclick = function() {
+          // 全部删除
+        //   stroge.clear()
+        stroge.removeItem('user');
+      }
+    
+    </script>
+</body>
+</html>

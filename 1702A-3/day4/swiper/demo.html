@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../libs/swiper.css">
+    <style>
+        .swiper-container {
+            height: 240px;
+
+        }
+
+        .swiper-container .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-container .swiper-wrapper .swiper-slide {
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+      <div class="">
+         <div>tab1</div>
+         <div>tab1</div>
+         <div>tab1</div>
+      </div>
+
+    <div class="swiper-container main">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="../../img/2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../../img/3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../../img/4.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../libs/swiper.js"></script>
+
+    <script>
+
+        new Swiper('.swiper-container', {
+            effect: 'cube', // cube coverflow  flip fade
+            // speed: 1000,
+            // autoplay: true
+            loop: true,
+            on: {
+                // 
+                setTranslate: function (translate) {
+                    //自定义事件
+                    console.log(translate, 'ss')
+                },
+                // 找下⌚
+                slideChange: function () {
+
+                    console.log(this.activeIndex);
+                },
+            },
+        })
+
+
+    </script>
+
+</body>
+
+</html>

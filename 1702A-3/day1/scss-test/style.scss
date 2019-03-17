@@ -1,0 +1,74 @@
+@import './index.scss';
+
+// 定义变量：$开头+名字： 值
+$fontSize: 100px;
+$containerH: 500px;
+$defaultFontSize: 37.5px !default;
+
+
+html,
+body {
+  font-size: $defaultFontSize;
+}
+
+// rem  em  
+// px 
+// em: 相对单位 父元素 
+// rem: 相对单位： 根字体；html
+// html : 100px;
+// 1rem = 100px;
+// 函数
+
+// 1rem = 100px
+// 1rem = 37.5px;
+
+@function cssToRem($font) {
+  @return $font / $defaultFontSize * 1rem;
+}
+
+// scss   嵌套  变量   函数  循环 
+.container {
+  width: 100%;
+  height: $containerH;
+  border: 1px solid black;
+  font-size: cssToRem(20px);
+}
+
+// @for $i from 1 through 3 { .item-#{$i} { width: 2em * $i; } }
+
+// @for $i from 1 through 3 {
+//   .item-#{$i} {
+//     width: 10px * $i;
+//   }
+// }
+
+@for $i from 1 to 3 {
+  .list-#{$i} {
+    width: 10px * $i;
+  }
+}
+
+
+// 混合宏 继承
+
+@mixin width($w: 1100px, $h: 200px) {
+  width: $w;
+  height: $h;
+}
+
+// 占位继承  继承
+%juzhong {
+  text-align: center;
+  line-height: 50px;
+}
+
+.box {
+  @include width;
+  @extend %juzhong;
+}
+
+.list-nav {
+  @extend .box;
+}
+
+

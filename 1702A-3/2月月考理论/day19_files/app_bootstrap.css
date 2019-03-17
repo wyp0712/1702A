@@ -1,0 +1,21 @@
+.border    {BORDER: #DDDDDD 1px solid;WIDTH: 100%;  border-collapse:collapse;border-spacing:0;margin-top: 5px}
+.border th {BORDER: #DDDDDD 1px solid; height: 30px}
+.border td {BORDER: #DDDDDD 1px solid; height: 30px}
+.tdName    { width: 15% ;text-align: right; font-weight: bold;
+}
+.tdContent { width: 35% ;}
+thead th   {text-align: center;}
+
+.bg1 {
+	background-color: #F7F7F7 !important
+}
+
+.login-panel {
+    margin-top: 25%;
+}
+
+.mytitle{
+	font-size:110%;
+	/* font-weight: bold !important;  */
+	color: #a82856 ;
+}

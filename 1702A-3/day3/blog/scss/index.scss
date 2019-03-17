@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+@mixin setTopBorder {
+    & {
+        border-top: 1px solid #999
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        & {
+            border-top: 0.5px solid #999
+        }
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+        & {
+            border-top: 0.333333px solid #999
+        }
+    }
+}
+@mixin setBottomBorder($color:#eee) {
+    & {
+        border-bottom: 1px solid $color;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        & {
+            border-bottom: 0.5px solid $color
+        }
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+        & {
+            border-bottom: 0.333333px solid $color;
+        }
+    }
+}
+
+
+
+
+/* rem */
+@function rem($font) {
+    @return $font / 37.5px * 1rem;
+}
+
+/* juzhong */
+%juzhong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.header {
+    height: rem(40px);
+    display: flex;
+
+    .left {
+        flex: 4;
+
+        @extend %juzhong;
+
+        .logo {
+            width: 60px;
+            height: 100%;
+            background: url('../img/logo.svg') no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+
+    .mid {
+        flex: 3;
+        @extend %juzhong;
+    }
+
+    .right {
+        flex: 3;
+        @extend %juzhong;
+
+        span {
+            width: 30px;
+            height: 30px;
+            ;
+            display: flex;
+            @extend %juzhong;
+            background: lightblue;
+            border-radius: 50%;
+        }
+    }
+}
+
+.main {
+    flex: 1;
+    overflow: auto;
+}
+
+.swiper-container {
+    height: rem(160px);
+
+    .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.icon-box {
+    height: rem(160px);
+    display: flex;
+    flex-wrap: wrap;
+    // @include setTopBorder;
+    margin-top:rem(5px);
+
+    .item {
+        width: 25%;
+        height: rem(80px);
+        display: flex;
+        flex-direction: column;
+        span {
+            @extend %juzhong;
+            &:nth-child(1) {
+                flex:7;
+                // background: orange;
+                div{
+                    @extend %juzhong;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: #7fdbff;
+                }
+               
+            }
+            &:nth-child(2) {
+                flex:3;
+            }
+        }
+        // icon-item-bg {
+        //     &:nth-child(1) {
+        //         background: #7fdbff;
+        //     }
+        //     &:nth-child(2) {
+        //         background: #ff4136;
+        //     }
+        //     &:nth-child(3) {
+        //         background: #f012be;
+        //     }
+        //     &:nth-child(4) {
+        //         background: #3d9970;
+        //     }
+        //     &:nth-child(5) {
+        //         background: #0074d9;
+        //     }
+        //     &:nth-child(6) {
+        //         background: #ff851b;
+        //     }
+        //     &:nth-child(7) {
+        //         background: #85144b;
+        //     }
+        //     &:nth-child(8) {
+        //       background: #aaa;   
+        //     }
+        // }
+    }
+}
+
+.zhuanti-header{
+    width: 92%;
+    margin-left:4%;
+    display: flex;
+    @include setBottomBorder;
+    .left{
+        flex:2;
+        @extend %juzhong;
+    }
+    .mid {
+        flex:6;
+        @extend %juzhong;
+    }
+    .right {
+       flex:2;
+       @extend %juzhong;
+    }
+}
+.zhuanti-body {
+    width: 90%;
+    margin-left:5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    li {
+        width: 48%;
+        height: rem(100px);
+        border-radius: 4px;
+        background: lightpink;
+        margin-bottom:5px;
+    }
+}

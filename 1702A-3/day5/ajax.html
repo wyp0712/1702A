@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // ajax  network  
+        /* 
+        1. get传参数 url + ? 
+        2. post 传参数 请求体传参数
+        
+        json : js对象表示法  末尾不能有结尾的标点 双引号 
+        
+        */
+
+        function formateObj(obj) {
+            let str = ''
+            //  age=3&name=devin
+            for (var key in obj) {
+                str += key + '=' + obj[key] + '&'
+            }
+            console.log(str.replace(/\&$/g, ''))
+            return str.replace(/\&$/g, '')
+        }
+        formateObj({
+            name: 123,
+            age: 345
+        })
+        // function ajax(opt) {
+        //     let opts = {
+        //         url: '',
+        //         async: true,
+        //         type: 'get',
+        //         success:function() {}
+        //     }
+        //     let opts = Object.assign({}, opts, opt)
+
+
+        //     let xhr = XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+        //     xhr.onload = function (res) {
+        //         if (res.target.status == '200') {
+        //             opts.success(JSON.parse(res.target.response))
+        //         }
+        //     }
+        //     if (opts.type = 'get') {
+        //         xhr.open(opts.type, opts.url + "?" + formateObj(opts.data), opts.async)
+        //         xhr.send()
+        //     } else {
+        //         xhr.open(opts.type, opts.url + "?" + 'age=3&name=devin', opts.async)
+        //         xhr.setRequestHeader('Content-type', 'Application/x-www-form-urlencoded');
+        //         xhr.send(formateObj(opts.data))
+        //     }
+        // }
+        function ajax(opt) {
+            let obj = {
+                url: '',
+                async: true,
+                type: 'get',
+            }
+            let opts = Object.assign({}, obj, opt)
+            return new Promise((resolve, reject) => {
+                let xhr = XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+                xhr.onload = function (res) {
+                    if (res.target.status == '200') {
+                        // opts.success(JSON.parse(res.target.response))
+                        resolve(JSON.parse(res.target.response))
+                    }
+                }
+                if (opts.type = 'get') {
+                    xhr.open(opts.type, opts.url + "?" + formateObj(opts.data), opts.async)
+                    xhr.send()
+                } else {
+                    xhr.open(opts.type, opts.url + "?" + 'age=3&name=devin', opts.async)
+                    xhr.setRequestHeader('Content-type', 'Application/x-www-form-urlencoded');
+                    xhr.send(formateObj(opts.data))
+                }
+            })
+        }
+        ajax({
+            url: './data.json',
+            type: 'get',
+            async: true,
+            data: {}
+        })
+        .then(res => {
+            console.log(res, 'res--promise')
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let doc = document.documentElement.clientWidth;
+        console.log(doc)
+        console.log(doc / 750)
+    </script>
+    <style>
+        .example {
+            padding: 20px;
+            color: white;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .example {
+                background: red;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .example {
+                background: green;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .example {
+                background: blue;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .example {
+                background: orange;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .example {
+                background: pink;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <h2>响应式判断</h2>
+    <p class="example">操作浏览器窗口，查看效果。</p>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+@import './common.scss';
+/* 变量 */
+
+$font: 37.5px !default;
+/* 函数  */
+@function rem($fontSize) {
+    @return $fontSize / 37.5px * 1rem;
+}
+
+h1 {
+    height:rem(45px);
+}
+
+/* 嵌套  尽量不要超过三层 */
+
+header {
+   div{
+
+   }
+}
+
+/* 继承 */ 
+
+@mixin widthHeight($w:100%, $h:100%) {
+  width: $w;
+  height: $h;   
+}
+h1 {
+    @include widthHeight(100px, 200px);
+}
+
+
+
+/* 循环 */ 
+
+@for $i from 1 through  3 {
+    .item#{$i} {
+        width: 10px * $i;
+    }
+}
+
+
+/* 弹性盒子 */
+
+
+/* 
+父元素:
+display : flex; 开启弹性盒子  
+
+flex-direction:column; 方向
+
+
+flex-wrap: wrap ; 换行  width
+
+
+// 子元素
+
+flex:1; 均分 
+
+
+*/ 
+
+// %juzhong{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// @extend %juzhong;
+
+/*  三段式结构  */
+
+// 大盒子开弹性盒子
+// 大盒子改变方向
+// 中间盒子分份；flex:1

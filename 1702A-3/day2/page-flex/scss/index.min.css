@@ -1,0 +1,1 @@
+*{margin:0;padding:0}html,body,.container{width:100%;height:100%}.container{display:flex;flex-direction:column}.main{flex:1;overflow:auto}.main .sec{width:calc(10rem * 0.9);height:200px;margin-left:calc(10rem * 0.05);background:lightcoral;border-radius:10px;margin-bottom:10px}.header,.footer{height:45px;background:red}

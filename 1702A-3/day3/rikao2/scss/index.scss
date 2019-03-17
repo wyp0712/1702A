@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+
+%juzhong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 45px;
+  background: #04030a;
+  display: flex;
+  color: #fff;
+
+  .header-left {
+    flex: 1;
+    @extend %juzhong;
+    //   text-align: center;
+    //   line-height: 45px;
+
+  }
+
+  .header-mid {
+    flex: 8;
+    @extend %juzhong;
+  }
+
+  .header-right {
+    flex: 1;
+    @extend %juzhong;
+  }
+
+}
+
+.main {
+  flex: 1;
+}
+
+.nav {
+  height: 30px;
+  background: greenyellow;
+
+  .nav-img {
+    width: 60px;
+    height: 100%;
+    margin-left: 14px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.swiper-container {
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 5%;
+  height: 160px;
+
+  .swiper-wrapper {
+    width: 100%;
+    height: 160px;
+
+    .swiper-slide {
+      width: 100%;
+      height: 160px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+/* icon */ 
+.icon-box {
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  .icon-item{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    span {
+      @extend %juzhong;
+      &:nth-child(1) {
+        flex:8;
+        background: url('../img/xuebitu.jpg') no-repeat;
+        background-position: 10px 10px; 
+      }
+      &:nth-child(2) {
+        flex:2;
+      }
+    }
+  }
+  .icon-item:nth-child(2) {
+    span {
+      &:nth-child(1) {
+        flex:8;
+        background: url('../img/xuebitu.jpg') no-repeat;
+        background-position: -96px 10px;
+      }
+      &:nth-child(2) {
+        flex:2;
+      }
+    }
+  }
+}
+.gold{
+  width: 100%;
+  height: 100px;
+  overflow-x: scroll;
+  .gold-content {
+    width: 300%;
+    height: 100px;
+
+    .gold-slide {
+      width: 33.3%;
+      height: 100%;
+      float: left;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+.footer {
+  height: 45px;
+  background: red;
+}

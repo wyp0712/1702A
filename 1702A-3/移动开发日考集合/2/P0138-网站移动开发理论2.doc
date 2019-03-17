@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>试卷</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+	<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+	<meta HTTP-EQUIV="expires" CONTENT="0">
+	<style type="text/css">
+	h3{white-space:pre-wrap}
+	</style>
+</head>
+<body>
+<center>
+<h1>P0138-网站移动开发理论2</h1>
+<h3>
+学院:_______________ 班级:_______________ 姓名:_______________ 得分:_______________   总分:100分  
+</h3>
+</center>
+<div id="exampaper-body" style="padding: 0px">
+	<!-- 开始加载试卷 -->
+			单选题  每道题（3分）
+				<h3><pre>1、下列选项中哪个符合标识符规范？</pre></h3>
+					<p>A:Function</p>
+					<p>B:typeof</p>
+					<p>C:_function</p>
+					<p>D:function</p>
+			
+				<h3><pre>2、下列选项中哪个运行会报错？</pre></h3>
+					<p>A:var s = new String('s');</p>
+					<p>B:var u = new Undefined();</p>
+					<p>C:var bool = new Boolean(false)</p>
+					<p>D:var num = new Number(0);</p>
+			
+				<h3><pre>3、执行var a=[0, 1, 2];console.log(a.join());将会打印：</pre></h3>
+					<p>A:12</p>
+					<p>B:0 1 2</p>
+					<p>C:0,1,2</p>
+					<p>D:[0,1,2]</p>
+			
+				<h3><pre>4、执行var  s=&quot;abcdefg&quot;;alert(s.substring(1,3));</pre></h3>
+					<p>A:ab</p>
+					<p>B:abc</p>
+					<p>C:bc</p>
+					<p>D:bcd</p>
+			
+				<h3><pre>5、下列选项中不属于字符串变量方法的是</pre></h3>
+					<p>A:indexOf()</p>
+					<p>B:charAt()</p>
+					<p>C:split()</p>
+					<p>D:splice()</p>
+			
+				<h3><pre>6、（网站）以下宽度在500px到780px的写法正确的是？</pre></h3>
+					<p>A:@media screen and (min-width:500px) (max-width:780px）</p>
+					<p>B:@media (max-width:500px) and (min-width:780px)</p>
+					<p>C:@media screen (max-width:500px) and (min-width:780px)</p>
+					<p>D:@media screen and (min-width:500px) and (max-width:780px）</p>
+			
+				<h3><pre>7、（网站）下面Media Queries的使用语法正确的是？</pre></h3>
+					<p>A:@media and 设备类型 (设备特性) { 样式代码 }</p>
+					<p>B:@media设备类型and(设备特性){ 样式代码 }</p>
+					<p>C:@media 设备类型 and (设备特性) { 样式代码 }</p>
+					<p>D:@media设备类型and(设备特性){ 样式代码 }</p>
+			
+				<h3><pre>8、（网站）一个网站能够兼容多个终端而不是为每一个终端做一个特定的版本的布局方式是（）？</pre></h3>
+					<p>A:弹性盒布局</p>
+					<p>B:双飞翼布局</p>
+					<p>C:圣杯布局</p>
+					<p>D:响应式布局</p>
+			
+				<h3><pre>9、（网站）text-overflow设置为（    ）时表示当对象内文本溢出时显示省略标记？</pre></h3>
+					<p>A:ellipsis</p>
+					<p>B:clip</p>
+					<p>C:none</p>
+					<p>D:以上都不可以</p>
+			
+				<h3><pre>10、（网站）meta标签哪个属性设置设备宽度？</pre></h3>
+					<p>A:width</p>
+					<p>B:max-width</p>
+					<p>C:device-width</p>
+					<p>D:user-select</p>
+			
+				<h3><pre>11、子元素宽度超过父级宽度时换行，正确的设置是（    ）？</pre></h3>
+					<p>A:flex-wrap:nowrap</p>
+					<p>B:flex-wrap:wrap</p>
+					<p>C:flex-wrap:wrap-reserve</p>
+					<p>D:以上都不对</p>
+			
+				<h3><pre>12、box-sizing的属性值为（   ）时，盒子的尺寸计算方式为从边框开始，盒子的尺寸，边框和内填充算在盒子尺寸内。</pre></h3>
+					<p>A:inherit</p>
+					<p>B:content-box</p>
+					<p>C:border-box</p>
+					<p>D:以上都不对</p>
+			
+				<h3><pre>13、Iphone6手机的分辨率是多少</pre></h3>
+					<p>A:414</p>
+					<p>B:320</p>
+					<p>C:375</p>
+					<p>D:768</p>
+			
+				<h3><pre>14、分辨率是1080px*1920px的是以下哪个机型？</pre></h3>
+					<p>A:三星 GALAXY Note4</p>
+					<p>B:OPPO R3</p>
+					<p>C:Iphone6</p>
+					<p>D:Iphone6 plus</p>
+			
+				<h3><pre>15、混合使用原生的程序和html5页面开发的手机应用是（   ）App？</pre></h3>
+					<p>A:Native App</p>
+					<p>B:Web App</p>
+					<p>C:Hybrid App</p>
+					<p>D:以上都不对</p>
+			
+				<h3><pre>16、（网站）关于混合宏说法错误的是？</pre></h3>
+					<p>A:可以通过@mixin来定义一个混合宏</p>
+					<p>B:可以通过@include来调用混合宏</p>
+					<p>C:通过$mixin来定义混合宏</p>
+					<p>D:需要重复使用的样式可以定义为一个混合宏</p>
+			
+				<h3><pre>17、（网站）HTML5中新增的（）标签用于书写导航</pre></h3>
+					<p>A:nav</p>
+					<p>B:header</p>
+					<p>C:main</p>
+					<p>D:section</p>
+			
+				<h3><pre>18、（网站）当更改表单元素的样式后可能会导致在各别手机端无法正常使用表单元素，解决方式是？</pre></h3>
+					<p>A:text-justify:normal</p>
+					<p>B:appearance:none</p>
+					<p>C:aspect-ratio：&lt;ratio&gt;</p>
+					<p>D:scrollbar-arrow-color:rgba(0,0,0,.5)</p>
+			
+				<h3><pre>19、（网站）Input 的placeholder会出现文本位置偏上的情况，如何解决？</pre></h3>
+					<p>A:display:block;</p>
+					<p>B:line-height:height</p>
+					<p>C:设置line-height：normal;</p>
+					<p>D:以上写法都不正确</p>
+			
+				<h3><pre>20、（网站）justify-content设置子元素沿主轴方向的对齐方式默认值为？</pre></h3>
+					<p>A:flex-start</p>
+					<p>B:flex-end</p>
+					<p>C:space-around</p>
+					<p>D:space-evenly</p>
+			多选题  每道题（2分）
+				<h3><pre>21、Math.ceil(-5.02)的结果是（），Math.floor(-5.02) 的结果是（）</pre></h3>
+					<p>A:-5</p>
+					<p>B:-5.02</p>
+					<p>C:-6</p>
+					<p>D:5.02</p>
+			
+				<h3><pre>22、下列数组方法中属于栈方法的是</pre></h3>
+					<p>A:shift()</p>
+					<p>B:pop()</p>
+					<p>C:unshift()</p>
+					<p>D:push()</p>
+			
+				<h3><pre>23、（网站）设为 Flex 布局以后，子元素的（）、（）和（）属性将失效？</pre></h3>
+					<p>A:float</p>
+					<p>B:clear</p>
+					<p>C:vertical-align</p>
+					<p>D:padding</p>
+			
+				<h3><pre>24、（网站）下列哪个选项设置在父元素上</pre></h3>
+					<p>A:flex-wrap</p>
+					<p>B:flex-shrink</p>
+					<p>C:flex-grow</p>
+					<p>D:justify-content</p>
+			
+				<h3><pre>25、和Viewport相关的单位有(    )?</pre></h3>
+					<p>A:vw</p>
+					<p>B:vh</p>
+					<p>C:vmax</p>
+					<p>D:vmin</p>
+			
+				<h3><pre>26、关于vw的描述，正确的有（   ）？</pre></h3>
+					<p>A:vw是基于Viewport视窗的长度单位</p>
+					<p>B:视窗（Viewport）指的是浏览器可视化的区域</p>
+					<p>C:视窗（Viewport）指的是页面body的区域</p>
+					<p>D:视窗（Viewport）指的是元素的大小</p>
+			
+				<h3><pre>27、（网站）以下哪个标签属于html5新增标签？</pre></h3>
+					<p>A:&lt;p&gt;&lt;/p&gt;</p>
+					<p>B:&lt;header&gt;&lt;/header&gt;</p>
+					<p>C:&lt;section&gt;&lt;/section&gt;</p>
+					<p>D:&lt;main&gt;&lt;/main&gt;</p>
+			
+				<h3><pre>28、（网站）关于sass描述正确的有？</pre></h3>
+					<p>A:SASS不允许使用变量</p>
+					<p>B:SASS是一种CSS的开发工具</p>
+					<p>C:SASS允许选择器但属性不可以嵌套</p>
+					<p>D:SASS允许选择器嵌套</p>
+			判断题  每道题（2分）
+				<h3><pre>29、已知num=0,执行n=++(--num+1) 后,n的值是1? </pre></h3>
+				<p>A:正确</p>
+				<p>B:错误</p>
+			
+				<h3><pre>30、函数定义时，通过arguments访问到的是实参？</pre></h3>
+				<p>A:正确</p>
+				<p>B:错误</p>
+			
+				<h3><pre>31、（网站）响应式布局主要使用js来实现。</pre></h3>
+				<p>A:正确</p>
+				<p>B:错误</p>
+			
+				<h3><pre>32、（网站）想要让一个网页在移动端和PC端显示不同的样式，可以通过流式布局实现</pre></h3>
+				<p>A:正确</p>
+				<p>B:错误</p>
+			
+				<h3><pre>33、（网站）响应式布局代码简洁，加载时间短。</pre></h3>
+				<p>A:正确</p>
+				<p>B:错误</p>
+			
+				<h3><pre>34、（网站）translate3d()可以开启手机硬件加速</pre></h3>
+				<p>A:正确</p>
+				<p>B:错误</p>
+			
+				<h3><pre>35、（网站）HTML5新增的article标签用来表示来自论坛或者博客的一篇独立的文章</pre></h3>
+				<p>A:正确</p>
+				<p>B:错误</p>
+			填空题  每道题（2分）
+				<h3><pre>36、执行var a=[];var b=[];console.log(a==b)将打印：_</pre></h3>
+			
+			
+				<h3><pre>37、函数定义有哪两种方式？</pre></h3>
+			
+			
+				<h3><pre>38、sass中调用混合宏的方法______</pre></h3>
+			
+			
+				<h3><pre>39、利用@media实现在浏览器的宽度低于768时有效，正确的设置是______________{//css} </pre></h3>
+			
+			
+				<h3><pre>40、（网站）box-sizing属性值为（）修改盒模型？</pre></h3>
+			
+</div>
+</body>
+</html>

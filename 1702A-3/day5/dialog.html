@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .dialog {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: black;
+            opacity: .6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dialog">
+        <div class="mask"></div>
+    </div>
+
+    <script>
+        const dialog = document.querySelector('.dialog');
+        const mask = document.querySelector('.mask');
+
+
+
+        function bindEvent(fn) {
+            mask.onclick = function () {
+        
+                dialog.removeChild(mask)
+
+                setTimeout(() => {
+                    fn && fn()
+                }, 2000)
+
+            }
+        }
+        bindEvent(function() {
+           console.log('mask已经关闭')
+        })
+    </script>
+
+</body>
+
+</html>

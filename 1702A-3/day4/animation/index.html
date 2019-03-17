@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     *{
+         margin:0;
+         padding:0;
+         list-style: none;
+
+     }
+     .box{
+         width: 200px;
+         height: 200px;
+         margin-top:200px;
+         margin-left:200px;
+         border:1px solid black;
+         /* 动画名字 时间 运动函数 延迟 次数 方向 运动后保持状态 */
+         /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+         /* animation: boxStyle 1s linear 0s infinite alternate; */
+         animation-name:  boxStyle;
+         animation-duration: 1s;
+         animation-timing-function: linear;
+         animation-direction: alternate;
+         /*  */
+         animation-fill-mode: backwards;
+     }
+
+     /* 动画帧动画 */
+     @keyframes boxStyle {
+         0% {
+          
+         }
+         10% {
+
+         }
+         50% {
+
+         }
+         100% {
+           border-radius: 50%;
+         }
+     }
+
+
+    
+    </style>
+</head>
+<body>
+    
+
+  <div class="box">
+
+  </div>
+
+</body>
+</html>

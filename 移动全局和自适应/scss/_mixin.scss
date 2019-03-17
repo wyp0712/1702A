@@ -1,0 +1,129 @@
+@mixin sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin absolute($direction) {
+    position: $direction;
+}
+
+@mixin height($height) {
+    height: $height;
+}
+
+@mixin hidden {
+    overflow: hidden;
+}
+
+@mixin center($center) {
+    text-align: $center;
+}
+
+@mixin box_flex {
+    //弹性盒
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+}
+
+@mixin direction ($dir:row) {
+    // 设置弹性盒子方向
+    -webkit-flex-direction: $dir;
+    flex-direction: $dir;
+    //row(水平方向：默认的)  row-reverse(水平方向翻转)   column(垂直方向)   column-reverse(垂直方向翻转)
+}
+
+@mixin flexWrap ($wrap:wrap) {
+    //换行
+    //nowrap(默认是)   wrap(换行)   wrap-reverse(换行翻转)
+    -webkit-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+
+@mixin flexFlow ($dir:row, $wrap:wrap) {
+    // 方向和换行的结合体
+    -webkit-flex-flow: $dir $wrap;
+    flex-flow: $dir $wrap;
+}
+
+@mixin justify ($justify:center) {
+    // 水平居中
+    //flex-start(左对齐)  flex-end(右对齐)  center(居中对齐)   space-between(两端对齐)
+    -webkit-justify-content: $justify;
+    justify-content: $justify;
+}
+
+@mixin align ($align:center) {
+    // 垂直居中
+    //flex-start(上对齐)    flex-end(下对齐)     center(居中对齐)   stretch(默认值)    baseline
+    -webkit-align-items: $align;
+    align-items: $align;
+}
+
+@mixin flex ($grow: 1, $shrink: 1, $basis: 0%) {
+    // 
+    -webkit-flex: $grow $shrink $basis;
+    flex: $grow $shrink $basis;
+}
+
+@mixin flex_grow($val) {
+    // 如果所有的项目flex-grow  设置为1，它们将等分剩余空间
+    -webkit-flex-grow: $val;
+    flex-grow: $val;
+}
+
+@mixin flex_shrink($val) {
+    //定义项目的缩小比例  默认为1  即如果空间不足，该项目将缩小
+    // flex-shrink:0   //即使空间不足，也不跟着缩小
+    -webkit-flex-shrink: $val;
+    flex-shrink: $val;
+}
+
+@mixin flex_basis($val) {
+    //是否有多余空间，它的默认值为auto，即项目的本来大小
+    -webkit-flex-basis: $val;
+    flex-basis: $val;
+}
+
+
+@mixin setBottomLine($c: #C7C7C7) {
+    & {
+        position: relative;
+    }
+    &:before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px solid $c;
+    }
+    [data-dpr="1"] &:before {
+        transform-origin: 0 0;
+        transform: scaleY(0.5);
+    }
+}
+
+@mixin setTopLine($c: #C7C7C7) {
+    & {
+        position: relative;
+    }
+    &:before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px solid $c;
+    }
+    [data-dpr="1"] &:before {
+        transform-origin: 0 0;
+        transform: scaleY(0.5);
+    }
+}

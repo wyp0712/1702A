@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* 变量 */
+/* 函数  */
+h1 {
+  height: 1.2rem;
+}
+
+/* 嵌套  尽量不要超过三层 */
+/* 继承 */
+h1 {
+  width: 100px;
+  height: 200px;
+}
+
+/* 循环 */
+.item1 {
+  width: 10px;
+}
+
+.item2 {
+  width: 20px;
+}
+
+.item3 {
+  width: 30px;
+}
+
+/* 弹性盒子 */
+/* 
+父元素:
+display : flex; 开启弹性盒子  
+
+flex-direction:column; 方向
+
+
+flex-wrap: wrap ; 换行  width
+
+
+// 子元素
+
+flex:1; 均分 
+
+
+*/
+/*  三段式结构  */

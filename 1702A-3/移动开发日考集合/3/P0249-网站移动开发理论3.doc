@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>试卷</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+	<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+	<meta HTTP-EQUIV="expires" CONTENT="0">
+	<style type="text/css">
+	h3{white-space:pre-wrap}
+	</style>
+</head>
+<body>
+<center>
+<h1>P0249-网站移动开发理论3</h1>
+<h3>
+学院:_______________ 班级:_______________ 姓名:_______________ 得分:_______________   总分:100分  
+</h3>
+</center>
+<div id="exampaper-body" style="padding: 0px">
+	<!-- 开始加载试卷 -->
+			单选题  每道题（3分）
+				<h3><pre>1、下列选项中哪个符合标识符规范？</pre></h3>
+					<p>A:Function</p>
+					<p>B:typeof</p>
+					<p>C:_function</p>
+					<p>D:function</p>
+			
+				<h3><pre>2、执行var  s=&quot;abcdefg&quot;;alert(s.substring(1,3));</pre></h3>
+					<p>A:ab</p>
+					<p>B:abc</p>
+					<p>C:bc</p>
+					<p>D:bcd</p>
+			
+				<h3><pre>3、（网站）align-self属性值不包含？</pre></h3>
+					<p>A:flex</p>
+					<p>B:flex-start</p>
+					<p>C:flex-end</p>
+					<p>D:center</p>
+			
+				<h3><pre>4、（网站）一个网站能够兼容多个终端而不是为每一个终端做一个特定的版本的布局方式是（）？</pre></h3>
+					<p>A:弹性盒布局</p>
+					<p>B:双飞翼布局</p>
+					<p>C:圣杯布局</p>
+					<p>D:响应式布局</p>
+			
+				<h3><pre>5、子元素水平靠左排列，正确的设置是（   ）？</pre></h3>
+					<p>A:flex-direction:column</p>
+					<p>B:flex-direction:row</p>
+					<p>C:flex-direction:column-reverse</p>
+					<p>D:flex-direction:row-reverse</p>
+			
+				<h3><pre>6、box-sizing的属性值为（   ）时，盒子的尺寸计算方式为从边框开始，盒子的尺寸，边框和内填充算在盒子尺寸内。</pre></h3>
+					<p>A:inherit</p>
+					<p>B:content-box</p>
+					<p>C:border-box</p>
+					<p>D:以上都不对</p>
+			
+				<h3><pre>7、vw是Viewport's width的简写,1vw等于(     )?</pre></h3>
+					<p>A:window.innerWidth</p>
+					<p>B:window.innerWidth的1%</p>
+					<p>C:document.body.offsetWidth</p>
+					<p>D:document.body.offsetWidth的1%</p>
+			
+				<h3><pre>8、分辨率是1080px*1920px的是以下哪个机型？</pre></h3>
+					<p>A:三星 GALAXY Note4</p>
+					<p>B:OPPO R3</p>
+					<p>C:Iphone6</p>
+					<p>D:Iphone6 plus</p>
+			
+				<h3><pre>9、（网站）HTML5中新增的（）标签用于书写导航</pre></h3>
+					<p>A:nav</p>
+					<p>B:header</p>
+					<p>C:main</p>
+					<p>D:section</p>
+			
+				<h3><pre>10、（网站）下列哪个选项设置视窗宽度为设备宽度?</pre></h3>
+					<p>A:minimum-scale=1.0</p>
+					<p>B:width=750</p>
+					<p>C:width=device-width</p>
+					<p>D:initial-scale=1.0</p>
+			
+				<h3><pre>11、（网站）Input 的placeholder会出现文本位置偏上的情况，如何解决？</pre></h3>
+					<p>A:display:block;</p>
+					<p>B:line-height:height</p>
+					<p>C:设置line-height：normal;</p>
+					<p>D:以上写法都不正确</p>
+			
+				<h3><pre>12、（   ）布局的特点是屏幕分辨率变化时，页面里元素的大小会变化，但布局不变。</pre></h3>
+					<p>A:流式布局</p>
+					<p>B:自适应布局</p>
+					<p>C:响应式布局</p>
+					<p>D:rem布局</p>
+			
+				<h3><pre>13、撑开剩余的空间</pre></h3>
+					<p>A:flex-grow:1</p>
+					<p>B:flex-shrink:0</p>
+					<p>C:flex</p>
+					<p>D:order</p>
+			
+				<h3><pre>14、定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式，这个属性是（   ）？</pre></h3>
+					<p>A:flex-flow</p>
+					<p>B:align-items</p>
+					<p>C:justify-content</p>
+					<p>D:flex-grow</p>
+			
+				<h3><pre>15、justify-content属性设为（   ）时项目位于容器的中心。</pre></h3>
+					<p>A:flex-start</p>
+					<p>B:flex-end</p>
+					<p>C:space-between</p>
+					<p>D:center</p>
+			
+				<h3><pre>16、设置弹性盒子的子元素如何分配空间，这个属性是（   ）？</pre></h3>
+					<p>A:flex</p>
+					<p>B:flex-grow</p>
+					<p>C:order</p>
+					<p>D:align-self</p>
+			
+				<h3><pre>17、 flex-direction 设为（    ）时元素将垂直显示，正如一个列一样。</pre></h3>
+					<p>A:row</p>
+					<p>B:row-reverse</p>
+					<p>C:column</p>
+					<p>D:column-reverse</p>
+			
+				<h3><pre>18、使用@(    )来声明字体</pre></h3>
+					<p>A:font-family</p>
+					<p>B:font-size</p>
+					<p>C:font-icon</p>
+					<p>D:font-face</p>
+			
+				<h3><pre>19、表达式 null || 'hello' &amp;&amp; 'bawei' 的结果为(   )</pre></h3>
+					<p>A:null</p>
+					<p>B:hello</p>
+					<p>C:bawei</p>
+					<p>D:TRUE</p>
+			
+				<h3><pre>20、使用iconfont的缺点有（   ）？
+</pre></h3>
+					<p>A:支持一些CSS3对文字的效果</p>
+					<p>B:字体文件比图片文件小很多</p>
+					<p>C:大小、颜色可以自由地修改</p>
+					<p>D:由于是字体，所以只可以显示纯色图片，不支持多种颜色的图片</p>
+			多选题  每道题（2分）
+				<h3><pre>21、Math.ceil(-5.02)的结果是（），Math.floor(-5.02) 的结果是（）</pre></h3>
+					<p>A:-5</p>
+					<p>B:-5.02</p>
+					<p>C:-6</p>
+					<p>D:5.02</p>
+			
+				<h3><pre>22、下列数组方法中属于栈方法的是</pre></h3>
+					<p>A:shift()</p>
+					<p>B:pop()</p>
+					<p>C:unshift()</p>
+					<p>D:push()</p>
+			
+				<h3><pre>23、（网站）设为 Flex 布局以后，子元素的（）、（）和（）属性将失效？</pre></h3>
+					<p>A:float</p>
+					<p>B:clear</p>
+					<p>C:vertical-align</p>
+					<p>D:padding</p>
+			
+				<h3><pre>24、（网站）下列哪个选项设置在父元素上</pre></h3>
+					<p>A:flex-wrap</p>
+					<p>B:flex-shrink</p>
+					<p>C:flex-grow</p>
+					<p>D:justify-content</p>
+			
+				<h3><pre>25、和Viewport相关的单位有(    )?</pre></h3>
+					<p>A:vw</p>
+					<p>B:vh</p>
+					<p>C:vmax</p>
+					<p>D:vmin</p>
+			
+				<h3><pre>26、关于vw的描述，正确的有（   ）？</pre></h3>
+					<p>A:vw是基于Viewport视窗的长度单位</p>
+					<p>B:视窗（Viewport）指的是浏览器可视化的区域</p>
+					<p>C:视窗（Viewport）指的是页面body的区域</p>
+					<p>D:视窗（Viewport）指的是元素的大小</p>
+			
+				<h3><pre>27、（网站）以下哪个标签属于html5新增标签？</pre></h3>
+					<p>A:&lt;p&gt;&lt;/p&gt;</p>
+					<p>B:&lt;header&gt;&lt;/header&gt;</p>
+					<p>C:&lt;section&gt;&lt;/section&gt;</p>
+					<p>D:&lt;main&gt;&lt;/main&gt;</p>
+			
+				<h3><pre>28、（网站）关于sass描述正确的有？</pre></h3>
+					<p>A:SASS不允许使用变量</p>
+					<p>B:SASS是一种CSS的开发工具</p>
+					<p>C:SASS允许选择器但属性不可以嵌套</p>
+					<p>D:SASS允许选择器嵌套</p>
+			
+				<h3><pre>29、为了实现最大程度的浏览器支持，可能要提供几种不同类型的字体文件，包括（   ）
+</pre></h3>
+					<p>A:TTF</p>
+					<p>B:WOFF</p>
+					<p>C:EOT</p>
+					<p>D:SVG</p>
+			
+				<h3><pre>30、解决retina屏问题的可行方案有（    ）</pre></h3>
+					<p>A:在devicePixelRatio&lt;=2时，图片统一使用750设计稿的切图</p>
+					<p>B:不管devicePixelRatio是多少，图片统一使用750设计稿的切图</p>
+					<p>C:在devicePixelRatio&gt;=2时，图片统一使用750*1.5=1125，也就是所谓@3x设计稿的切图</p>
+					<p>D:不管devicePixelRatio是多少，图片统一使用1125设计稿的切图</p>
+			判断题  每道题（2分）
+				<h3><pre>31、（网站）当子元素宽度超过父元素宽度时自动像内挤压，如果要保持子元素本身的宽度应该设置flex-shrink属性为0.</pre></h3>
+				<p>A:正确</p>
+				<p>B:错误</p>
+			
+				<h3><pre>32、响应式布局就是使用媒体查询的方式，通过查询浏览器的宽度，不同的宽度应用不同的样式块，每个样式块对应的是该宽度下的布局方式，从而实现响应式布局，响应式布局的页面可以适配多种终端屏幕（pc、平板、手机）。</pre></h3>
+				<p>A:正确</p>
+				<p>B:错误</p>
+			
+				<h3><pre>33、media query 是响应式设计的核心，它能够和浏览器进行沟通，告诉浏览器页面如何呈现</pre></h3>
+				<p>A:正确</p>
+				<p>B:错误</p>
+			
+				<h3><pre>34、media query里的device-width属性，始终指的是设备的宽度。所以响应式布局的媒介查询要用width属性，不用device-width属性，因为在桌面设备下，把浏览器窗口缩小的时候，device-width并不会发生改变，当调整浏览器窗口大小就看不到响应式的效果。</pre></h3>
+				<p>A:正确</p>
+				<p>B:错误</p>
+			
+				<h3><pre>35、如果做移动端，且设计对高度和元素间距要求不高，那么弹性布局（rem+js）是最好的选择，一份css+一份js调节font-size搞定。</pre></h3>
+				<p>A:正确</p>
+				<p>B:错误</p>
+			填空题  每道题（2分）
+				<h3><pre>36、函数定义有哪两种方式？</pre></h3>
+			
+			
+				<h3><pre>37、利用@media实现在浏览器的宽度低于768时有效，正确的设置是______________{//css} </pre></h3>
+			
+			
+				<h3><pre>38、下列程序的输出是_________。
+var num = parseFloat('abc123'), b;
+if (num) b = true;b = false;
+console.log(b);</pre></h3>
+			
+			
+				<h3><pre>39、决定项目方向的属性是______________</pre></h3>
+			
+			
+				<h3><pre>40、___________属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap</pre></h3>
+			
+</div>
+</body>
+</html>

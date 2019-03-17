@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            /* height: 50px; */
+            background: red;
+            /* 开启 */
+            display: flex;
+            flex-direction: column;
+            /* 弹性盒子默认方向为横向 */
+        }
+
+        .item {
+            /* 分份 */
+            flex: 1;
+            height: 50px;
+            /* text-align: center;
+         line-height: 50px; */
+            display: flex;
+            /* 水平居中 */
+            justify-content: center;
+            /*  */
+            align-items: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container wrap">
+        <div class="item">tiem1</div>
+        <div class="item">item2</div>
+        <div class="item">tiem3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div>
+        <div class="item">item9</div>
+        <div class="item">item10</div>
+        <div class="item">item11</div>
+    </div>
+
+
+    <!-- 
+    1.开启弹性盒子
+    2.分份  10   平均分  flex:1;
+    3. 方向（轴）： 默认横轴
+    4. 弹性盒子剧中  水平  垂直剧中 flex-start  flex-end center
+    5. 弹性盒子换行  display:flex; flex-wrap: wrap; 子元素给宽度
+    -->
+
+</body>
+
+</html>

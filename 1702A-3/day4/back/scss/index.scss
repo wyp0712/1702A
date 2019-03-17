@@ -1,0 +1,32 @@
+// div {
+//     position: relative;
+
+//     &::after {
+//         position: absolute;
+//         left: 0;
+//         right: 0;
+//         height: 1px;
+//         background: #eeeeee;
+//         transform: scaleY(.5);
+//         content: '';
+//     }
+// }
+
+// @mixin setTopBorder($color: #eeeeee) {
+//     & {
+//         position: relative;
+//     }
+//     &::after {
+//         content: '';
+//         position: absolute;
+//         left: 0;
+//         right: 0;
+//         height: 1px;
+//         background: black;
+//         transform: scaleY(.5);
+//     }
+// }
+
+// .nav {
+//     @include setTopBorder;
+// }

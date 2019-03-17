@@ -1,0 +1,13 @@
+.nav {
+  position: relative;
+}
+
+.nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: red;
+  transform: scaleY(0.5);
+}

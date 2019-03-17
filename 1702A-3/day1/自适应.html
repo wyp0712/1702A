@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function rem() {
+      let doc = document.documentElement.clientWidth;
+      console.log(doc / 750 * 100)
+      let font = doc / 750 * 100;
+
+      document.documentElement.style.fontSize = font + 'px';
+    }
+    rem();
+    window.onresize = function () {
+      rem()
+    }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 375 / 50  = 7.5 */
+    .container {
+      width: 7.5rem;
+      height: 1rem;
+      background: red;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <header class="header">
+
+    </header>
+    <main class="main">
+
+    </main>
+    <footer class="footer">
+
+    </footer>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
